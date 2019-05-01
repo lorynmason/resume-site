@@ -1,5 +1,6 @@
 import React from 'react';
-import Home from './Home/Home'
+import Home from './Home/Home';
+import "./styles/main.scss";
 
 function App() {
   return (
