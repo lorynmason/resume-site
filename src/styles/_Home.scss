@@ -1,4 +1,9 @@
 main {
   color: aquamarine;
-  background: rgb(41, 41, 41);
+  background: $darkColor;
+  @include flexin;
+  height: 100vh;
+  .name {
+    text-align: left;
+  }
 }

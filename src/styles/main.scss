@@ -1,2 +1,20 @@
+//colors
+$darkColor : rgb(41, 41, 41);
+$accent1 : aquamarine;
+$accent2 : rgb(17, 177, 164);
+$accent3 : rgb(1, 148, 167);
+$accent4 : rgb(0, 93, 105);
+$accent5 : rgb(0, 67, 105);
+
+//mixins
+
+@mixin flexin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @import "reset";
 @import "Home";
+@import "Menu";

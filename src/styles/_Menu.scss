@@ -1,0 +1,41 @@
+nav {
+  margin: 20px;
+}
+.nav-block {
+  height: 140px;
+  width: 140px;
+  color: $darkColor;
+  @include flexin;
+  flex-direction: column;
+  h4 {
+    font-size: 4rem;
+    margin: 0 auto;
+  }
+  h6 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+}
+
+.block1 {
+  background: aquamarine;
+  margin-left: 125px;
+}
+
+.block2 {
+  background: rgb(17, 177, 164);
+  margin-left: 50px;
+}
+
+.block3 {
+  background: rgb(1, 148, 167);
+}
+
+.block4 {
+  background: rgb(0, 93, 105);
+  margin-left: 50px;
+}
+
+.block5 {
+  background: rgb(0, 67, 105);
+}

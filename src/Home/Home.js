@@ -4,8 +4,10 @@ import Menu from '../Menu/Menu';
 function Home() {
   return (
     <main>
-      <h1>LORYN MASON</h1>
-      <h3>FULL STACK DEVELOPER</h3>
+      <div className="name">
+        <h1>LORYN MASON</h1>
+        <h3>FULL STACK DEVELOPER</h3>
+      </div>
       <Menu />
     </main>
   );
