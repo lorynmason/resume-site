@@ -4,6 +4,13 @@ main {
   @include flexin;
   height: 100vh;
   .name {
-    text-align: left;
+    text-align: center;
+    margin-right: 50px;
+    h1 {
+      font-size: 10rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
   }
 }
