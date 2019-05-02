@@ -8,9 +8,36 @@ main {
     margin-right: 50px;
     h1 {
       font-size: 10rem;
+      background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fade-in 5s;
     }
     h3 {
       font-size: 3rem;
+      color: rgb(201, 199, 199);
+      animation: slide-in 6s;
     }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    margin-left: -2000px;
+  }
+  50% {
+    margin-left: -2000px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
