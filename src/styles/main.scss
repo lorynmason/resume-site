@@ -22,15 +22,19 @@ a {
   text-decoration: none;
 }
 
-main {
+.App {
   color: aquamarine;
   background: $darkColor;
-  @include flexin;
   min-height: 100vh;
   font-family: 'Righteous', cursive;
+}
+
+main {
+  @include flexin;
 }
 
 @import "reset";
 @import "Home";
 @import "Menu";
 @import "Timeline";
+@import "Header";
