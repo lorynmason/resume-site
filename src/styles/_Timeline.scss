@@ -17,45 +17,36 @@
     }
     &:hover {
       .content {
-        // position: absolute;
         display: block;
         background: black;
         min-height: 300px;
         width: 400px;
-        // margin-left: 50px;
-        // left: 50px;
       }
       &:nth-child(odd) {
         .content {
           margin-left: 80px;
         }
+        // .content::after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 100%;
+        //   left: 50%;
+        //   transform: translateX(-50%);
+        //   border: 15px solid black;
+        //   border-left-color: transparent;
+        //   border-right-color: black;
+        //   border-top-color: transparent;
+        //   border-bottom-color: transparent;
+        //   width: 0;
+        //   height: 0;
+        //   margin-left: 50px;
+        // }
       }
       &:nth-child(even) {
         .content {
           margin-left: -450px;
         }
       }
-      // .content::after {
-      //   content: "";
-      //   position: absolute;
-      //   top: 100%;
-      //   left: 50%;
-      //   transform: translateX(-50%);
-      //   border: 15px solid black;
-      //   border-left-color: transparent;
-      //   border-right-color: transparent;
-      //   border-top-color: black;
-      //   border-bottom-color: transparent;
-      //   width: 0;
-      //   height: 0;
-      //   margin-left: -80px;
-      // }
     }
-  }
-  .marker:first-child {
-    // margin-left: 80px;
-  }
-  .marker:last-child {
-    // margin-right: 80px;
   }
 }
