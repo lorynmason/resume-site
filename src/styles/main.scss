@@ -7,16 +7,32 @@ $accent4 : rgb(0, 93, 105);
 $accent5 : rgb(0, 67, 105);
 
 //fonts
-// @import url('https://fonts.googleapis.com/css?family=Gugi');
-@import url('https://fonts.googleapis.com/css?family=Gugi|Modak');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-//mixins
 
+
+//mixins
 @mixin flexin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@mixin title ($h1FS, $h3FS, $h1shadow, $h3shadow) {
+  h1 {
+    font-size: $h1FS;
+    text-shadow: $h1shadow;
+    background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h3 {
+    font-size: $h3FS;
+    color: rgb(201, 199, 199);
+    text-shadow: $h3shadow;
+  }
+}
+
+//all
 
 a {
   text-decoration: none;
@@ -32,6 +48,8 @@ a {
 main {
   @include flexin;
 }
+
+//imports
 
 @import "reset";
 @import "Home";
