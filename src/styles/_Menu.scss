@@ -16,6 +16,9 @@ nav {
     font-size: 2rem;
     margin: 0 auto;
   }
+  &:hover{
+    filter: brightness(120%);
+  }
 }
 
 .block1 {

@@ -1,0 +1,61 @@
+.timeline {
+  width: 10px;
+  background: repeating-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+  margin-top: 200px;
+  @include flexin;
+  justify-content: space-between;
+  flex-direction: column;
+  .marker {
+    border: 3px solid rgb(0, 0, 0);
+    background: rgba(250, 249, 249, 0.363);
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    margin: 25px 0;
+    .content, .arrow {
+      display: none;
+    }
+    &:hover {
+      .content {
+        // position: absolute;
+        display: block;
+        background: black;
+        min-height: 300px;
+        width: 400px;
+        // margin-left: 50px;
+        // left: 50px;
+      }
+      &:nth-child(odd) {
+        .content {
+          margin-left: 80px;
+        }
+      }
+      &:nth-child(even) {
+        .content {
+          margin-left: -450px;
+        }
+      }
+      // .content::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 100%;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   border: 15px solid black;
+      //   border-left-color: transparent;
+      //   border-right-color: transparent;
+      //   border-top-color: black;
+      //   border-bottom-color: transparent;
+      //   width: 0;
+      //   height: 0;
+      //   margin-left: -80px;
+      // }
+    }
+  }
+  .marker:first-child {
+    // margin-left: 80px;
+  }
+  .marker:last-child {
+    // margin-right: 80px;
+  }
+}

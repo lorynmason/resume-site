@@ -2,7 +2,7 @@ main {
   color: aquamarine;
   background: $darkColor;
   @include flexin;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Righteous', cursive;
   .name {
     text-align: center;
