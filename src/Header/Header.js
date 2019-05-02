@@ -1,12 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
     <header>
       <div className="header-name">
-        <h1>LORYN MASON</h1>
-        <h3>FULL STACK DEVELOPER</h3>
+        <Link to="/" id='title'> 
+          <h1>LORYN MASON</h1>
+          <h3>FULL STACK DEVELOPER</h3>
+        </Link>
       </div>
       <nav className='header-nav'>
       <NavLink to='/history'>
