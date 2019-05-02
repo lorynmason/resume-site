@@ -3,9 +3,10 @@ main {
   background: $darkColor;
   @include flexin;
   height: 100vh;
+  font-family: 'Righteous', cursive;
   .name {
     text-align: center;
-    margin-right: 50px;
+    margin-right: 150px;
     h1 {
       font-size: 10rem;
       text-shadow: -1px -1px 40px #000;

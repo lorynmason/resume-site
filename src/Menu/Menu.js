@@ -21,7 +21,7 @@ function Menu() {
       </div>
       <div className="nav-block block5">
         <h4>A</h4>
-        <h6>About Me</h6>
+        <h6>About</h6>
       </div>
     </nav>
   );
