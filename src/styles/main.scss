@@ -18,7 +18,11 @@ $accent5 : rgb(0, 67, 105);
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
 
 @import "reset";
 @import "Home";
 @import "Menu";
+@import "Timeline";

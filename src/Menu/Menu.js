@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Menu() {
   return (
     <nav>
-      <div className="nav-block block1">
-        <h4>H</h4>
-        <h6>History</h6>
-      </div>
+      <Link to='/history'>
+        <div className="nav-block block1">
+          <h4>H</h4>
+          <h6>History</h6>
+        </div>
+      </Link>
       <div className="nav-block block2">
         <h4>S</h4>
         <h6>Skills</h6>
