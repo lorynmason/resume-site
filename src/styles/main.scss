@@ -22,6 +22,14 @@ a {
   text-decoration: none;
 }
 
+main {
+  color: aquamarine;
+  background: $darkColor;
+  @include flexin;
+  min-height: 100vh;
+  font-family: 'Righteous', cursive;
+}
+
 @import "reset";
 @import "Home";
 @import "Menu";
