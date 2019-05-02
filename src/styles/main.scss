@@ -47,6 +47,7 @@ a {
 
 main {
   @include flexin;
+  min-height: 100vh;
 }
 
 //imports
