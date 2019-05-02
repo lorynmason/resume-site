@@ -7,6 +7,7 @@ nav {
   color: $darkColor;
   @include flexin;
   flex-direction: column;
+  box-shadow: -50px 10px 30px rgb(32, 32, 32);
   h4 {
     font-size: 4rem;
     margin: 0 auto;
@@ -19,23 +20,48 @@ nav {
 
 .block1 {
   background: aquamarine;
-  margin-left: 125px;
+  margin-left: 165px;
+  animation: wiggle 8s linear 9.3s infinite, drop-in1 9s;
 }
 
 .block2 {
   background: rgb(17, 177, 164);
-  margin-left: 50px;
+  margin-left: 70px;
+  animation: drop-in1 8s;
 }
 
 .block3 {
   background: rgb(1, 148, 167);
+  animation: drop-in1 7s;
 }
 
 .block4 {
   background: rgb(0, 93, 105);
-  margin-left: 50px;
+  margin-left: 70px;
+  animation: drop-in1 6s;
 }
 
 .block5 {
-  background: rgb(0, 67, 105);
+  background: rgb(5, 78, 121);
+  animation: drop-in1 4s;
+}
+
+@keyframes drop-in1 {
+  0% {
+    transform: translateY(-1000px); 
+  }
+  80% {
+    transform: translateY(-1000px); 
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(4deg);}
+  25% {transform: rotate(10deg);}
+  50% {transform: rotate(18deg);}
+  75% {transform: rotate(10deg);}
+  100% {transform: rotate(4deg);}
 }
