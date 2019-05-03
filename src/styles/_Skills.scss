@@ -1,0 +1,56 @@
+.skills {
+  ul {
+    padding-top: 200px;
+    animation: scroll-up 25s linear infinite;
+    z-index: 0;
+    li {
+      margin: 0 auto;
+      font-size: 3rem;
+      padding: 5px;
+      width: 80vw;
+      min-width: 500px;
+      text-align: center;
+      transition: all ease .5s;
+      text-shadow: -1px -1px 20px rgb(26, 25, 25);
+      background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: none;
+      &:hover {
+        font-size: 3.3rem;
+        filter: invert(100%);
+        text-shadow: none;
+      }
+    }
+    li:last-child {
+      padding-bottom: 205px;
+    }
+  }
+}
+
+.bottom {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(
+    rgba(41, 41, 41, 0.1),
+    rgba(41, 41, 41, 0.3),
+    rgba(41, 41, 41, 0.6),
+    rgba(41, 41, 41, 0.8), 
+    rgba(41, 41, 41, 0.9),
+    rgba(41, 41, 41, 0.99));
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+}
+
+// @keyframes scroll-up {
+//   0%{
+//     transform: translate(0%, 50%);
+//   }
+//   50%{
+//     transform: translate(0%, -15%);
+//   } 
+//   100%{
+//     transform: translate(0%, -80%);
+//   }
+// }
