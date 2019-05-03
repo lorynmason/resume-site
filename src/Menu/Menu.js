@@ -10,10 +10,12 @@ function Menu() {
           <h6>History</h6>
         </div>
       </Link>
-      <div className="nav-block block2">
-        <h4>S</h4>
-        <h6>Skills</h6>
-      </div>
+      <Link to='/skills'>
+        <div className="nav-block block2">
+          <h4>S</h4>
+          <h6>Skills</h6>
+        </div>
+      </Link>
       <div className="nav-block block3">
         <h4>P</h4>
         <h6>Projects</h6>
