@@ -1,0 +1,11 @@
+.projects {
+  .slider {
+    padding-top: 200px;
+    .slide {
+      @include flexin;
+    }
+    img {
+      width: 500px;
+    }
+  }
+}
