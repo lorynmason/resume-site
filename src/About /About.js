@@ -31,6 +31,7 @@ export const About = () => {
           <p>Motivated developer with significant, real experience
           with current front-end languages and frameworks. Strong analytic and creative ability coupled with excellent team and communication skills.</p>
           <p>Merging degrees in culinary arts and business administration with my experience working in kitchens, I came to software development with strong communication skills in team settings and a desire to keep pushing forward and always be learning. When I’m attacking a problem I patiently study the situation, use my resources, test out theories, and come up with a solution, I’m not afraid to revisit a problem if I come up with a better solution. I’ll obsess over it until I’m satisfied. </p>
+        </article>
           <h1>When I'm not coding...</h1>
           <img src={img1} alt=""/>
           <img src={img2} alt=""/>
@@ -51,7 +52,6 @@ export const About = () => {
           <img src={img17} alt=""/>
           <img src={img18} alt=""/>
           <img src={img19} alt=""/>
-        </article>
       </div>
     </section>
   )
