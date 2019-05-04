@@ -50,6 +50,10 @@ main {
   min-height: 100vh;
 }
 
+section {
+  min-height: 100vh;
+}
+
 //imports
 
 @import "reset";
@@ -58,3 +62,4 @@ main {
 @import "Timeline";
 @import "Header";
 @import "Skills";
+@import "Projects";

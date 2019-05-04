@@ -16,10 +16,12 @@ function Menu() {
           <h6>Skills</h6>
         </div>
       </Link>
-      <div className="nav-block block3">
-        <h4>P</h4>
-        <h6>Projects</h6>
-      </div>
+      <Link to='/projects'>
+        <div className="nav-block block3">
+          <h4>P</h4>
+          <h6>Projects</h6>
+        </div>
+      </Link>
       <div className="nav-block block4">
         <h4>G</h4>
         <h6>Goals</h6>

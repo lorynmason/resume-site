@@ -23,10 +23,12 @@ export const Header = () => {
           <h6>Skills</h6>
         </div>
       </NavLink>
-      <div className="nav-block block3">
-        <h4>P</h4>
-        <h6>Projects</h6>
-      </div>
+      <NavLink to='/projects'>
+        <div className="nav-block block3">
+          <h4>P</h4>
+          <h6>Projects</h6>
+        </div>
+      </NavLink>
       <div className="nav-block block4">
         <h4>G</h4>
         <h6>Goals</h6>

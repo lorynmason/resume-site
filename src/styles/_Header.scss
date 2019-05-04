@@ -4,6 +4,9 @@ header {
   height: 150px;
   @include flexin;
   justify-content: space-between;
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
   background: linear-gradient(
    rgba(41, 41, 41, 0.99),
    rgba(41, 41, 41, 0.9),
@@ -13,6 +16,17 @@ header {
    rgba(41, 41, 41, 0.1));
   width: 100%;
   @include title(3.2rem, 1.9rem, -1px -1px 40px #000, 2px -2px 10px #000 );
+  #title {
+    @media screen and (max-width: 450px) {
+      h1 {
+        margin: 0 auto;
+        text-align: center;
+      }
+      h3 {
+        display: none;
+      }
+    }
+  }
   #title:hover {
     h1 {
       font-size: 3.5em;
@@ -55,6 +69,15 @@ header {
       cursor: none;
       &:hover {
         filter: brightness(25%);
+      }
+    }
+    @media screen and (max-width: 775px) {
+      .nav-block {
+        height: 40px;
+        width: 40px;
+        h6 {
+          display: none;
+        }
       }
     }
   }
