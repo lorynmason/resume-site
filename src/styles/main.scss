@@ -37,6 +37,10 @@ $accent5 : rgb(0, 67, 105);
 }
 
 //all
+html {
+  background: $darkColor;
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -47,6 +51,7 @@ a {
   background: $darkColor;
   min-height: 100vh;
   font-family: 'Righteous', cursive;
+  overflow-x: unset;
 }
 
 main {

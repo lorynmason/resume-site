@@ -29,9 +29,9 @@ export const About = () => {
       <div className="grid-container">
         <img src={img2} alt="ME" id="profile"/>
         <article className="bio">
-          <p>Motivated developer with significant, real experience
-          with current front-end languages and frameworks. Strong analytic and creative ability coupled with excellent team and communication skills.</p>
-          <p>Merging degrees in culinary arts and business administration with my experience working in kitchens, I came to software development with strong communication skills in team settings and a desire to keep pushing forward and always be learning. When I’m attacking a problem I patiently study the situation, use my resources, test out theories, and come up with a solution, I’m not afraid to revisit a problem if I come up with a better solution. I’ll obsess over it until I’m satisfied. </p>
+          <p>I’m motivated developer with significant, real experience with current front-end languages and frameworks. Currently looking for a job in Portland, OR. Merging degrees in culinary arts and business administration with my experience working in kitchens, I came to software development with strong communication skills in team settings and a desire to keep pushing forward and always be learning. When I’m attacking a problem I patiently study the situation, use my resources, test out theories, and come up with a solution, I’m not afraid to revisit a problem if I come up with a better solution. I’ll obsess over it until I’m satisfied.</p>
+          <p>masonloryn@gmail.com</p>
+          <p>907.209.3040</p>
         </article>
         <h1>When I'm not coding...</h1>
         <div className="inner-grid">
