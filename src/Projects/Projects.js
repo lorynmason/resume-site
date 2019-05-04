@@ -16,6 +16,7 @@ export const Projects = () => {
   return(
     <section className="projects">
       <Header/>
+      <div className="spacer"></div>
       <Carousel id='carousel' style={width}>
         <div className='slide'>
           <img src={ftfgif} alt="gif of my project from the farm"/>

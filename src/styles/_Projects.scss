@@ -1,6 +1,9 @@
 .projects {
+  .spacer {
+    height: 200px;
+    width: 100%;
+  }
   .slider {
-    padding-top: 200px;
     margin: 0 auto;
     .slide {
       @include flexin;
@@ -8,10 +11,30 @@
     img {
       max-width: 600px;
       margin: 20px;
+      filter: drop-shadow(-5px 5px 6px rgb(27, 27, 27));
     }
     .card-info {
-      width: 400px;
-      background: rgb(27, 27, 27);
+      width: 500px;
+      min-height: 340px;
+      text-shadow: -5px 5px 6px rgb(27, 27, 27);
+    }
+    h1 {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 2rem;
+    }
+    p {
+      color: rgb(201, 199, 199);
+      margin: 20px;
+      font-size: 1.3rem;
+    }
+    a {
+      text-decoration: underline;
+      color: $accent3;
+      font-size: 1.5rem;
+      display: block;
+      margin: 10px;
+      text-align: center;
     }
   }
 }
