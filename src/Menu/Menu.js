@@ -26,10 +26,12 @@ function Menu() {
         <h4>G</h4>
         <h6>Goals</h6>
       </div>
-      <div className="nav-block block5">
-        <h4>A</h4>
-        <h6>About</h6>
-      </div>
+      <Link to='/about'>
+        <div className="nav-block block5">
+          <h4>A</h4>
+          <h6>About</h6>
+        </div>
+      </Link>
     </nav>
   );
 }
