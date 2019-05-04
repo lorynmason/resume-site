@@ -7,9 +7,13 @@
     margin: 0 auto;
     .slide {
       @include flexin;
+      @media screen and (max-width: 775px) {
+        flex-direction: column;
+      }
     }
     img {
       max-width: 600px;
+      min-width: 300px;
       margin: 20px;
       filter: drop-shadow(-5px 5px 6px rgb(27, 27, 27));
     }
