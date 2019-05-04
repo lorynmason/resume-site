@@ -35,27 +35,27 @@ export const About = () => {
         </article>
         <h1>When I'm not coding...</h1>
         <div className="inner-grid">
-          <img src={img1} alt=""/>
-          <img src={img18} alt=""/>
+          <img id='img-1' src={img1} alt=""/>
+          <img id='img-2' src={img18} alt=""/>
           {/* <img src={img2} alt=""/> */}
-          <img src={img14} alt=""/>
+          <img id='img-3' src={img14} alt=""/>
 
-          <img src={img3} alt=""/>
-          <img src={img8} alt=""/>
-          <img src={img13} alt=""/>
-          <img src={img15} alt=""/>
+          <img id='img-4' src={img3} alt=""/>
+          <img id='img-5' src={img8} alt=""/>
+          <img id='img-6' src={img13} alt=""/>
+          <img id='img-7' src={img15} alt=""/>
 
-          <img src={img4} alt=""/>
-          <img src={img9} alt=""/>
-          <img src={img16} alt=""/>
+          <img id='img-8' src={img4} alt=""/>
+          <img id='img-9' src={img9} alt=""/>
+          <img id='img-10' src={img16} alt=""/>
 
-          <img src={img5} alt=""/>
+          <img id='img-11' src={img5} alt=""/>
           {/* <img src={img6} alt=""/> */}
-          <img src={img12} alt=""/>
-          <img src={img10} alt=""/>
-          <img src={img11} alt=""/>
-          <img src={img17} alt=""/>
-          <img src={img7} alt=""/>
+          <img id='img-12' src={img12} alt=""/>
+          <img id='img-14' src={img10} alt=""/>
+          <img id='img-13' src={img11} alt=""/>
+          <img id='img-15' src={img17} alt=""/>
+          <img id='img-16' src={img7} alt=""/>
           {/* <img src={img19} alt=""/> */}
         </div>
       </div>

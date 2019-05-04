@@ -19,17 +19,21 @@ $accent5 : rgb(0, 67, 105);
 
 @mixin title ($h1FS, $h3FS, $h1shadow, $h3shadow) {
   h1 {
-    font-size: $h1FS;
-    text-shadow: $h1shadow;
-    background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-h1($h1FS, $h1shadow);
   }
   h3 {
     font-size: $h3FS;
     color: rgb(201, 199, 199);
     text-shadow: $h3shadow;
   }
+}
+
+@mixin gradient-h1($h1FS, $h1shadow) {
+  font-size: $h1FS;
+  text-shadow: $h1shadow;
+  background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 //all
