@@ -1,6 +1,52 @@
 .grid-container {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
-  img {
-    width: 500px;
+  grid-template-areas: 
+    "profile-pic bio"
+    "h1 h1"
+    "inner-grid inner-grid";
+  grid-template-rows: 400px 100px auto;
+  .inner-grid {
+    grid-area: inner-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 30px;
+    img {
+      min-width: 300px;
+      max-width: 500px;
+      filter: grayscale(90%);
+      transition: all ease-in-out .5s;
+      &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+      }
+      // height: 400px;
+    }
+    img:nth-child(odd) {
+      // grid-column: span 2;
+    }
   }
+  .bio {
+    grid-area: bio;
+    height: 400px;
+  }
+  h1 {
+    grid-area: h1;
+    width: 100%;
+  }
+  #profile {
+    grid-area: profile-pic;
+    height: 400px;
+  }
+  // h1 {
+  //   grid-column: span 3;
+  // }
+  // .bio {
+  //   grid-column: span 2;
+  // }
 }
