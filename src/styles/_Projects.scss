@@ -1,11 +1,17 @@
 .projects {
   .slider {
     padding-top: 200px;
+    margin: 0 auto;
     .slide {
       @include flexin;
     }
     img {
-      width: 500px;
+      max-width: 600px;
+      margin: 20px;
+    }
+    .card-info {
+      width: 400px;
+      background: rgb(27, 27, 27);
     }
   }
 }
