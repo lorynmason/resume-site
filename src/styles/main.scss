@@ -19,11 +19,7 @@ $accent5 : rgb(0, 67, 105);
 
 @mixin title ($h1FS, $h3FS, $h1shadow, $h3shadow) {
   h1 {
-    font-size: $h1FS;
-    text-shadow: $h1shadow;
-    background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-h1($h1FS, $h1shadow);
   }
   h3 {
     font-size: $h3FS;
@@ -32,7 +28,19 @@ $accent5 : rgb(0, 67, 105);
   }
 }
 
+@mixin gradient-h1($h1FS, $h1shadow) {
+  font-size: $h1FS;
+  text-shadow: $h1shadow;
+  background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 //all
+html {
+  background: $darkColor;
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -43,6 +51,7 @@ a {
   background: $darkColor;
   min-height: 100vh;
   font-family: 'Righteous', cursive;
+  overflow-x: unset;
 }
 
 main {
@@ -63,3 +72,4 @@ section {
 @import "Header";
 @import "Skills";
 @import "Projects";
+@import "About";
