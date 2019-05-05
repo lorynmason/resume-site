@@ -1,7 +1,3 @@
-.about {
-  // width: 1000px;
-  // overflow-x: hidden;
-}
 .grid-container {
   margin: 0 auto;
   display: grid;
@@ -207,7 +203,7 @@
   #profile {
     grid-area: profile-pic;
     height: 400px;
-    box-shadow: rgb(12, 12, 12) -5px 5px 10px;
+    // box-shadow: rgb(17, 17, 17) -3px 3px 5px;
     margin-left: 50px;
   }
 }
