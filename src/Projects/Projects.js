@@ -19,16 +19,6 @@ export const Projects = () => {
       <div className="spacer"></div>
       <Carousel id='carousel' style={width}>
         <div className='slide'>
-          <img src={ftfgif} alt="gif of my project from the farm"/>
-          <div className="card-info">
-            <h1>from the farm</h1>
-            <p>Group project, MVP completed in 8 days. From the Farm connects farm- ers directly with retailers, cutting out the middleman distributor, making the farm to table movement more feasible.</p>
-            <p>Tech: React, Router, Redux, Sass, GIT, Jest, Enzyme, TravisCI</p>
-            <a href="https://github.com/lorynmason/from-the-farm">Github</a>
-            <a href="https://from-the-farm.herokuapp.com/">Live Site</a>
-          </div>
-        </div>
-        <div className='slide'>
           <img src={ppgif} alt="gif of my project Palette Picker"/>
           <div className="card-info">
             <h1>Palette Picker</h1>
@@ -36,6 +26,16 @@ export const Projects = () => {
             <p>Tech: jQuery, Node.js, Express, Knex, SQL, Heroku, TravisCI</p>
             <a href="https://github.com/lorynmason/Palette-Picker">Github</a>
             <a href="https://lm-palette-picker.herokuapp.com">Live Site</a>
+          </div>
+        </div>
+        <div className='slide'>
+          <img src={ftfgif} alt="gif of my project from the farm"/>
+          <div className="card-info">
+            <h1>from the farm</h1>
+            <p>Group project, MVP completed in 8 days. From the Farm connects farm- ers directly with retailers, cutting out the middleman distributor, making the farm to table movement more feasible.</p>
+            <p>Tech: React, Router, Redux, Sass, GIT, Jest, Enzyme, TravisCI</p>
+            <a href="https://github.com/lorynmason/from-the-farm">Github</a>
+            <a href="https://from-the-farm.herokuapp.com/">Live Site</a>
           </div>
         </div>
         <div className='slide'>
