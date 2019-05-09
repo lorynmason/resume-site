@@ -6,6 +6,7 @@ import History from './History/History';
 import { Skills } from './Skills/Skills'
 import { Projects } from './Projects/Projects';
 import { About } from './About /About';
+import { Goals } from './Goals/Goals';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/skills" component={Skills}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/about" component={About}/>
+          <Route path="/goals" component={Goals}/>
         </Switch> 
     </div>
   );
