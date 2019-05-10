@@ -1,0 +1,36 @@
+.goals {
+  // position: relative;
+  // overflow: hidden;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  margin: 0 auto;
+  font-size: 3rem;
+  .goal {
+    position: absolute;
+    // width: 100%;
+    top: 50vh;
+    right: 50vw;
+    // transform-origin: 50vh 100vw;
+    width: 400px;
+    // height: 100px;
+    text-align: center;
+  }
+  .goal1{
+    transform: rotate(-90deg) translate(50%, 415%);
+    background: rgba(47, 102, 255, 0.76);
+  }
+  .goal2{
+    transform: translate(100%, 0%);
+    background: rgba(1, 138, 53, 0.76);
+
+  }
+  .goal3{
+    transform: rotate(90deg) translate(50%, -415%);
+    background: rgba(231, 91, 10, 0.76);
+  }
+  .goal4{
+    transform: rotate(180deg);
+    background: rgba(117, 1, 79, 0.76);
+  }
+}
