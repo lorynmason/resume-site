@@ -6,7 +6,7 @@ import History from './History/History';
 import { Skills } from './Skills/Skills'
 import { Projects } from './Projects/Projects';
 import { About } from './About /About';
-import { Goals } from './Goals/Goals';
+import Goals from './Goals/Goals';
 
 function App() {
   return (
