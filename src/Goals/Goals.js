@@ -6,33 +6,45 @@ class Goals extends Component {
     super()
     this.state = {
       data: [{goal: 'job', info: 'land a kick ass job'}, {goal: 'pullups', info: 'do 10 pullups'}, {goal: 'python', info: 'learn python 3'}, {goal: 'coding', info: 'learn more!'}],
-      show: 0
+      show: 0,
+      spin: false
     }
   }
 
   changeGoal = (i) => {
     this.setState({
-      show: i
-    })
+      show: i,
+      spin: true
+    }, this.resetspin)
+  }
+
+  resetspin = () => {
+    setTimeout(() => {
+      this.setState({spin: false})
+    }, 4001);
   }
 
   render () {
-    const data = this.state.data
+    const { data, show, spin } = this.state
     const goals = data.map((goal, i) => {
       const className = `goal goal${i + 1}`
       return (
-        <div className={className} onClick={() => this.changeGoal(i)}>{goal.goal}</div>
+        <div className={className} key={i+1} onClick={() => this.changeGoal(i)}>{goal.goal}</div>
       )
     })
+    let className;
+    spin ? className = 'center spinner' : className = 'center';
     return (
       <section>
         <Header/>
         <div className="spacer"></div>
         <div className="goals">
-          {goals}
+          <div className={className}>
+            {goals}
+          </div>  
         </div>
         <div className="info">
-          {data[this.state.show].info}
+          {data[show].info}
         </div>
       </section>
     )

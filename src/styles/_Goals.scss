@@ -1,31 +1,52 @@
 .goals {
-  width: 400px;
-  height: 400px;
+  margin: 150px auto 0;
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
-  margin: 0 auto;
   font-size: 3rem;
+}
+
+.center {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 200px;
+    height: 0;
+    width: 0;
+  }
+}
+
+.spinner {
+  animation: spin 2s linear;
+  animation-iteration-count: 2;
+}
+  
   .goal {
     position: absolute;
-    top: 50vh;
-    right: 50vw;
-    width: 400px;
     text-align: center;
   }
-  .goal1{
-    transform: rotate(-90deg) translate(50%, 415%);
-    background: rgba(47, 102, 255, 0.589);
+  
+  .goal1 {
+    transform: rotate(-90deg) translate(0, 150px);
   }
-  .goal2{
-    transform: translate(100%, 0%);
-    background: rgba(1, 138, 53, 0.555);
+  
+  .goal2 {
+    transform: translate(260px, 150px);
+  }
+  .goal3 {
+    transform: rotate(90deg) translate(270px, -130px);
+  }
+  
+  .goal4 {
+    transform: rotate(180deg) translate(0, -150px);
+  }
 
-  }
-  .goal3{
-    transform: rotate(90deg) translate(50%, -415%);
-    background: rgba(231, 91, 10, 0.527);
-  }
-  .goal4{
-    transform: rotate(180deg);
-    background: rgba(117, 1, 78, 0.411);
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
