@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Header } from "../Header/Header";
-import { Card } from "../Card/Card"
 
 class Goals extends Component {
   constructor(){
@@ -11,10 +10,19 @@ class Goals extends Component {
     }
   }
 
+  changeGoal = (i) => {
+    this.setState({
+      show: i
+    })
+  }
+
   render () {
     const data = this.state.data
     const goals = data.map((goal, i) => {
-          return <Card title={goal.goal} info={goal.info} i={i}/>
+      const className = `goal goal${i + 1}`
+      return (
+        <div className={className} onClick={() => this.changeGoal(i)}>{goal.goal}</div>
+      )
     })
     return (
       <section>
