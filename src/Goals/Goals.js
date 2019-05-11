@@ -6,22 +6,37 @@ class Goals extends Component {
     super()
     this.state = {
       data: [{goal: 'job', info: 'land a kick ass job'}, {goal: 'pullups', info: 'do 10 pullups'}, {goal: 'python', info: 'learn python 3'}, {goal: 'coding', info: 'learn more!'}],
-      show: 0,
       spin: false
     }
   }
 
   changeGoal = (i) => {
+    let newdata = [...this.state.data]
+    let select;
+    if (i === 0) {
+      select = newdata.splice(0, 1)
+    }
+    if (i === 1) {
+      select = newdata.splice(1, 1)
+    }
+    if (i === 2) {
+      select = newdata.splice(2, 1)
+    }
+    if (i === 3) {
+      select = newdata.splice(3, 1)
+    }
+    newdata.splice(1, 0, ...select)
+
     this.setState({
-      show: i,
-      spin: true
+      spin: true,
+      data: newdata
     }, this.resetspin)
   }
 
   resetspin = () => {
     setTimeout(() => {
       this.setState({spin: false})
-    }, 4001);
+    }, 2001);
   }
 
   render () {
@@ -44,7 +59,7 @@ class Goals extends Component {
           </div>  
         </div>
         <div className="info">
-          {data[show].info}
+          {data[1].info}
         </div>
       </section>
     )
