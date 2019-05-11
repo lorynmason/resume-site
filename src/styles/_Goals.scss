@@ -31,13 +31,14 @@
 
 .spinner {
   animation: spin 1s linear;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
   
   .goal {
     position: absolute;
     // @include gradient-h1(3rem, -1px -1px 20px rgb(26, 25, 25));
     width: 5px;
+    text-shadow: -10px 20px 6px rgb(17, 17, 17);
     height: 3rem;
     @include flexin;
     justify-content: flex-start;
@@ -45,8 +46,7 @@
     overflow: visible;
     cursor: pointer;
       &:hover {
-        filter: invert(100%);
-        text-shadow: none;
+        color: $accent3;        
       }
   }
   
@@ -56,12 +56,27 @@
   
   .goal2 {
     transform: translate(185px, 125px);
+    color: $accent4;
+    // filter: invert(80%);
+    // text-shadow: none;
   }
   .goal3 {
     transform: rotate(90deg) translate(165px, -150px);
   }
   .goal4 {
     transform: rotate(180deg) translate(-110px, -130px);
+  }
+  .goal5 {
+    transform: rotate(235deg) translate(-140px, 30px);
+  }
+  .goal6 {
+    transform: rotate(-45deg) translate(80px, 200px);
+  }
+  .goal7 {
+    transform: rotate(45deg) translate(250px, -30px);
+  }
+  .goal8 {
+    transform: rotate(135deg) translate(30px, -200px);
   }
 
 @keyframes spin {
