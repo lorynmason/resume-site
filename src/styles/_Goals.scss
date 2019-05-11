@@ -36,7 +36,13 @@
   
   .goal {
     position: absolute;
-    @include gradient-h1(3rem, -1px -1px 20px rgb(26, 25, 25));
+    // @include gradient-h1(3rem, -1px -1px 20px rgb(26, 25, 25));
+    width: 5px;
+    height: 3rem;
+    @include flexin;
+    justify-content: flex-start;
+    // background: blueviolet;
+    overflow: visible;
     cursor: pointer;
       &:hover {
         filter: invert(100%);
@@ -45,18 +51,17 @@
   }
   
   .goal1 {
-    transform: rotate(-90deg) translate(60px, 110px);
+    transform: rotate(-90deg) translate(-85px, 150px);
   }
   
   .goal2 {
-    transform: translate(300px, 125px);
+    transform: translate(185px, 125px);
   }
   .goal3 {
-    transform: rotate(90deg) translate(360px, -80px);
+    transform: rotate(90deg) translate(165px, -150px);
   }
-  
   .goal4 {
-    transform: rotate(180deg) translate(140px, -130px);
+    transform: rotate(180deg) translate(-110px, -130px);
   }
 
 @keyframes spin {

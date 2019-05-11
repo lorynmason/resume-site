@@ -5,7 +5,7 @@ class Goals extends Component {
   constructor(){
     super()
     this.state = {
-      data: [{goal: 'job', info: 'land a kick ass job'}, {goal: 'pullups', info: 'do 10 pullups'}, {goal: 'python', info: 'learn python 3'}, {goal: 'coding', info: 'learn more!'}],
+      data: [{goal: 'career', info: 'land a kick ass job'}, {goal: 'strength', info: 'do 10 pullups'}, {goal: 'python', info: 'learn python 3'}, {goal: 'coding', info: 'learn more!'}],
       spin: false
     }
   }
@@ -26,7 +26,6 @@ class Goals extends Component {
       select = newdata.splice(3, 1)
     }
     newdata.splice(1, 0, ...select)
-
     this.setState({
       spin: true,
       data: newdata
@@ -40,7 +39,7 @@ class Goals extends Component {
   }
 
   render () {
-    const { data, show, spin } = this.state
+    const { data, spin } = this.state
     const goals = data.map((goal, i) => {
       const className = `goal goal${i + 1}`
       return (
