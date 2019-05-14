@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from "../Header/Header";
 
 export const Skills = () => {
+  const [play, playScroll] = useState(false);
   return (
-    <section>
+    <section className="skills-page">
       <Header/>
       <section className="skills">
-        <ul>
+        <button 
+          title="Play/pause scroll animation" 
+          className={play ? "pause-btn btn" : "play-btn btn"} 
+          onClick={() => playScroll(!play)}
+        >
+          {/* <i className={play ? "fas fa-pause" : "fas fa-play"}></i> */}
+          {play ? "pause" : "play"}
+        </button>
+        <ul className={play ? "play" : "pause"}>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>SASS/SCSS</li>
