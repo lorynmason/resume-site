@@ -3,7 +3,7 @@ import { Header } from '../Header/Header';
 
 function History() {
   return (
-    <section>
+    <section className="history">
       <Header />
      <section className="timeline">
       <div className='marker'>

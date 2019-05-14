@@ -5,16 +5,12 @@
     z-index: 0;
     li {
       margin: 0 auto;
-      font-size: 3rem;
       padding: 5px;
       width: 80vw;
       min-width: 500px;
       text-align: center;
       transition: all ease .5s;
-      text-shadow: -1px -1px 20px rgb(26, 25, 25);
-      background: -webkit-linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradient-h1(3rem, -1px -1px 20px rgb(26, 25, 25));
       cursor: none;
       &:hover {
         font-size: 3.3rem;
@@ -43,14 +39,14 @@
   bottom: 0;
 }
 
-// @keyframes scroll-up {
-//   0%{
-//     transform: translate(0%, 50%);
-//   }
-//   50%{
-//     transform: translate(0%, -15%);
-//   } 
-//   100%{
-//     transform: translate(0%, -80%);
-//   }
-// }
+@keyframes scroll-up {
+  0%{
+    transform: translate(0%, 50%);
+  }
+  50%{
+    transform: translate(0%, -15%);
+  } 
+  100%{
+    transform: translate(0%, -80%);
+  }
+}
