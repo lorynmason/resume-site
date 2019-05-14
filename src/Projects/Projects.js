@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Header } from "../Header/Header";
 import ftfgif from '../styles/images/fromthefarm.gif';
 import ppgif from '../styles/images/palettepicker.gif';
@@ -9,15 +9,13 @@ import bookgif from '../styles/images/booktivist.gif';
 import githubgif from '../styles/images/github.gif';
 import Carousel from 'nuka-carousel';
 
-export const Projects = () => {
-  const width = {
-    "width": "90%"
-  }
-  return(
-    <section className="projects">
+class Projects extends Component {
+  render(){
+    return (
+      <section className="projects">
       <Header/>
       <div className="spacer"></div>
-      <Carousel id='carousel' style={width}>
+      <Carousel id='carousel'>
         <div className='slide'>
           <img src={ppgif} alt="gif of my project Palette Picker"/>
           <div className="card-info">
@@ -85,5 +83,8 @@ export const Projects = () => {
         </div>
       </Carousel>
     </section>
-  )
+    )
+  }
 }
+
+export default Projects
