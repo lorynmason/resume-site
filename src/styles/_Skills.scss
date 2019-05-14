@@ -1,7 +1,11 @@
+.skills-page{
+  height: 100vh;
+  overflow: scroll;
+}
+
 .skills {
   ul {
     padding-top: 200px;
-    animation: scroll-up 25s linear infinite;
     z-index: 0;
     li {
       margin: 0 auto;
@@ -24,6 +28,46 @@
   }
 }
 
+.btn {
+  margin: 50vh 0 0 50px;
+  position: fixed;
+  z-index: 1000;
+  background: linear-gradient($accent1, $accent2, $accent3, $accent4, $accent5);
+  border: none;
+  font-size: 2rem;
+  border-radius: 7px;
+  outline: none;
+  font-family: 'Righteous', cursive;
+  padding: 0 15px;
+  height: 55px;
+  @include flexin();
+  transition: all ease-in-out .5s;
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+  &:hover {
+    filter: invert(100%) brightness(120%);
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.05);
+  }
+}
+
+.pause-btn {
+  filter: invert(100%) brightness(90%);
+  box-shadow: 5px 5px 10px white;
+  &:hover {
+    filter: invert(0%) brightness(120%);
+    box-shadow: 5px 5px 10px black;
+  }
+}
+
+.play {
+  animation: scroll-up 18s linear infinite;
+}
+
+.pause {
+  animation: none;
+}
+
 .bottom {
   height: 200px;
   width: 100%;
@@ -41,7 +85,7 @@
 
 @keyframes scroll-up {
   0%{
-    transform: translate(0%, 50%);
+    transform: translate(0%, 100vh);
   }
   50%{
     transform: translate(0%, -15%);
