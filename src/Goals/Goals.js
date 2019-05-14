@@ -6,40 +6,41 @@ class Goals extends Component {
     super()
     this.state = {
       data: [
-        {
-          goal: 'career', 
-          info: "First I want land a kick ass job. I'm looking for a job where I'll have the opertunity learn as much as possible, I know that sounds cliché but I really want to grow as a developer and be changled."
-        }, 
-        {
-          goal: 'strength', 
+         {
+          goal: 'fitness', 
           info: 'Be able 10 pullups and be able to climb a V6 by the end of the summer'
         }, 
         {
+          goal: 'career', 
+          info: "First I want land a kick ass job. I'm looking for a job where I'll have the opertunity learn as much as possible, I know that sounds cliché but I really want to grow as a developer and be changled. until I land a job I'll coding everyday, and learning new tech"
+        }, 
+        {
           goal: 'backend', 
-          info: 'Learn more about backend programing, more specialy I really want the learn Python 3, '
+          info: 'Learn more about backend programing, more specialy I really want the learn Python 3, graphQL, basically anything I can learn to build up my backend knowledge.'
         }, 
         {
           goal: 'longterm', 
-          info: 'Hike the Pacific Crest Trail. Live satanibly by having a effect house, growing my own food.'
+          info: 'Hike the Pacific Crest Trail. Live satanibly by having an Ultra-efficient home, growing my own food, and using my bike as my main mode of transportation.'
         },
         {
-          goal: 'UXdesign', 
-          info: 'Hike the Pacific Crest Trail. Live satanibly by having a effect house, growing my own food.'
+          goal: 'design', 
+          info: 'Explore design'
         },
         {
-          goal: 'animations', 
-          info: 'Hike the Pacific Crest Trail. Live satanibly by having a effect house, growing my own food.'
+          goal: 'animation', 
+          info: 'I really want to get better at css animations'
         },
         {
           goal: 'rescue', 
-          info: 'Adopt as many cats and dogs as possible'
+          info: 'Adopt as many cats and dogs as possible, well what i really want to do is forster rescue animals until they find their furever home'
         },
         {
           goal: 'frontend', 
-          info: 'Adopt as many cats and dogs as possible'
+          info: 'I want to continue to learn more frontend frameworks, and increase my JavaScript knowledge'
         }
       ],
-      spin: false
+      spin: false,
+      showInfo: true
     }
   }
 
@@ -49,7 +50,8 @@ class Goals extends Component {
     newdata.splice(1, 0, ...select)
     this.setState({
       spin: true,
-      data: newdata
+      data: newdata,
+      showInfo: true
     }, this.resetspin)
   }
 
@@ -59,12 +61,17 @@ class Goals extends Component {
     }, 1001);
   }
 
+  resetInfo = () => {
+    this.setState({showInfo: false})
+  }
+
   render () {
-    const { data, spin } = this.state
+    const { data, spin, showInfo } = this.state
     const goals = data.map((goal, i) => {
       const className = `goal goal${i + 1}`
       return (
-        <div className={className} key={i+1} onClick={() => this.changeGoal(i)}>{goal.goal}</div>
+        <div className={className} key={i+1} onMouseDown={this.resetInfo}
+        onMouseUp={() => this.changeGoal(i)}>{goal.goal}</div>
       )
     })
     let className;
@@ -73,13 +80,16 @@ class Goals extends Component {
       <section>
         <Header/>
         <div className="spacer"></div>
-        <div className="goals">
-          <div className={className}>
-            {goals}
-          </div>  
-        </div>
-        <div className="info">
-          {data[1].info}
+        <div className="container">
+          <div className="goals">
+            <div className={className}>
+              {goals}
+            </div>  
+          </div>
+          <div className={showInfo ? "info" : "hide"}>
+            <h1>GOAL: <span>{data[1].goal}</span></h1>
+            {data[1].info}
+          </div>
         </div>
       </section>
     )

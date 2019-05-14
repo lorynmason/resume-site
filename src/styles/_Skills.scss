@@ -39,14 +39,14 @@
   bottom: 0;
 }
 
-// @keyframes scroll-up {
-//   0%{
-//     transform: translate(0%, 50%);
-//   }
-//   50%{
-//     transform: translate(0%, -15%);
-//   } 
-//   100%{
-//     transform: translate(0%, -80%);
-//   }
-// }
+@keyframes scroll-up {
+  0%{
+    transform: translate(0%, 50%);
+  }
+  50%{
+    transform: translate(0%, -15%);
+  } 
+  100%{
+    transform: translate(0%, -80%);
+  }
+}
