@@ -1,10 +1,7 @@
-.spacer {
-  height: 200px;
-  width: 100%;
-}
 .projects {
-  .slider {
+  #carousel {
     margin: 0 auto;
+    @include flexin;
     .slide {
       @include flexin;
       @media screen and (max-width: 775px) {
@@ -48,6 +45,9 @@
       display: block;
       margin: 10px;
       text-align: center;
+    }
+    i {
+      font-size: 4rem;
     }
   }
 }
