@@ -1,4 +1,18 @@
 .projects {
+  .indicators {
+    width: 100vw;
+    @include flexin;
+    .indicator {
+      margin: 50px 20px 20px;
+      height: 3px;
+      width: 35px;
+      background: $accent3;
+      // border: 3px solid white;
+    }
+    #active {
+      background: $accent1;
+    }
+  }
   #carousel {
     margin: 0 auto;
     @include flexin;
@@ -48,6 +62,7 @@
     }
     i {
       font-size: 4rem;
+      text-shadow: -8px 8px 10px black;
     }
   }
 }

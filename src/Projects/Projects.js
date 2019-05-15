@@ -98,9 +98,17 @@ class Projects extends Component {
   render(){
     const { data, currentSlide } = this.state
     const slide = data[currentSlide]
+    const indicators = data.map( (s, i) => {
+      if (i === currentSlide) {
+      return <div className="indicator" id="active"></div>
+      }
+      return <div className="indicator"></div>
+    })
+  
     return (
       <section className="projects">
       <Header/>
+      <div className="spacer"></div>
       <section id='carousel'>
         <i className="fas fa-chevron-left" onClick={()=> this.changeSlide(-1)}></i>
         <div className='slide'>
@@ -115,6 +123,7 @@ class Projects extends Component {
           <i className="fas fa-chevron-right" onClick={()=> this.changeSlide(1)}></i>
         </div>
       </section>
+      <div className='indicators'>{indicators}</div>
     </section>
     )
   }
