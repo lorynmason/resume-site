@@ -4,10 +4,10 @@
     @include flexin;
     .indicator {
       margin: 50px 20px 20px;
-      height: 3px;
+      height: 5px;
       width: 35px;
       background: $accent3;
-      // border: 3px solid white;
+      cursor: pointer;
     }
     #active {
       background: $accent1;
@@ -17,9 +17,11 @@
     margin: 0 auto;
     @include flexin;
     .slide {
+      height: 422px;
       @include flexin;
-      @media screen and (max-width: 775px) {
+      @media screen and (max-width: 938px) {
         flex-direction: column;
+        margin-top: 50px;
       }
     }
     img {
@@ -27,8 +29,11 @@
       min-width: 300px;
       margin: 20px;
       filter: drop-shadow(-5px 5px 6px rgb(27, 27, 27));
-      @media screen and (max-width: 667px) {
+      @media screen and (max-width: 1200px) {
         width: 500px;
+      }
+      @media screen and (max-width: 1040px) {
+        width: 450px;
       }
       @media screen and (max-width: 450px) {
         width: 300px;
@@ -38,6 +43,21 @@
       width: 500px;
       min-height: 340px;
       text-shadow: -5px 5px 6px rgb(27, 27, 27);
+      @media screen and (max-width: 1100px) {
+        width: 400px;
+      }
+      @media screen and (max-width: 1000px) {
+        width: 350px;
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+        a {
+          font-size: 1.3rem;
+        }
+      }
       @media screen and (max-width: 450px) {
         width: 300px;
       }
@@ -62,9 +82,21 @@
     }
     i {
       font-size: 4rem;
-      text-shadow: -8px 8px 10px black;
+      text-shadow: -7px 7px 9px black;
       &:hover {
         color: $accent3;
+      }
+    }
+    .fa-chevron-left {
+      margin-right: 30px;
+      @media screen and (max-width: 1200px) {
+        margin-right: 10px;
+      }
+    }
+    .fa-chevron-right {
+      margin-left: 30px;
+      @media screen and (max-width: 1200px) {
+        margin-left: 10px;
       }
     }
   }

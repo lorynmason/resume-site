@@ -124,8 +124,8 @@ class Projects extends Component {
             {slide.github ? <a href={slide.github}>Github</a> : ''}
             {slide.liveSite ? <a href={slide.liveSite}>Live Site</a> : ''}
           </div>
-          <i className="fas fa-chevron-right" onClick={()=> this.changeSlide(1)}></i>
         </div>
+          <i className="fas fa-chevron-right" onClick={()=> this.changeSlide(1)}></i>
       </section>
       <div className='indicators'>{indicators}</div>
     </section>
