@@ -63,6 +63,9 @@
     i {
       font-size: 4rem;
       text-shadow: -8px 8px 10px black;
+      &:hover {
+        color: $accent3;
+      }
     }
   }
 }

@@ -7,7 +7,6 @@ import portgif from '../styles/images/portprotection.gif';
 import sbgif from '../styles/images/swapibox.gif';
 import bookgif from '../styles/images/booktivist.gif';
 import githubgif from '../styles/images/github.gif';
-import Carousel from 'nuka-carousel';
 
 class Projects extends Component {
   constructor(){
@@ -81,11 +80,12 @@ class Projects extends Component {
       currentSlide: 0
     }
   }
+
   changeSlide = (i) => {
     const { data, currentSlide } = this.state
     let newIdex = currentSlide+i
-    if(newIdex === -1) {
-      newIdex = data.length-1
+    if( i !== 1 && i !== -1) {
+      newIdex = i
     }
     if(newIdex === data.length) {
       newIdex = 0
@@ -100,9 +100,10 @@ class Projects extends Component {
     const slide = data[currentSlide]
     const indicators = data.map( (s, i) => {
       if (i === currentSlide) {
-      return <div className="indicator" id="active"></div>
+        // console.log(i)
+      return <div className="indicator" id="active" onClick={()=> this.changeSlide(i)}></div>
       }
-      return <div className="indicator"></div>
+      return <div className="indicator" onClick={()=> this.changeSlide(i)}></div>
     })
   
     return (
