@@ -4,7 +4,7 @@ import "./styles/main.scss";
 import { Route, Switch } from 'react-router-dom';
 import History from './History/History';
 import { Skills } from './Skills/Skills'
-import { Projects } from './Projects/Projects';
+import Projects from './Projects/Projects';
 import { About } from './About /About';
 import Goals from './Goals/Goals';
 
