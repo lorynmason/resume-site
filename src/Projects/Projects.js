@@ -90,6 +90,9 @@ class Projects extends Component {
     if(newIdex === data.length) {
       newIdex = 0
     }
+    if(newIdex < 0) {
+      newIdex = data.length - 1
+    }
     this.setState({
       currentSlide: newIdex
     })
